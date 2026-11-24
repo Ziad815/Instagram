@@ -1,1 +1,153 @@
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    width: 350px;
+}
+
+.login-card,
+.signup-card {
+    background: white;
+    border: 1px solid #dbdbdb;
+    text-align: center;
+}
+
+.login-card {
+    padding: 40px 35px 25px;
+}
+
+.logo {
+    font-family: cursive;
+    font-size: 48px;
+    margin-bottom: 12px;
+    color: #262626;
+}
+
+.subtitle {
+    color: #737373;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+input {
+    width: 100%;
+    height: 40px;
+    padding: 9px;
+    background: #fafafa;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+    font-size: 12px;
+    outline: none;
+}
+
+.password-box {
+    position: relative;
+}
+
+.password-box button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login-button {
+    height: 34px;
+    border: none;
+    border-radius: 7px;
+    background: #4a91d9;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.login-button:hover {
+    background: #287ac7;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #737373;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 25px 0;
+}
+
+.divider span {
+    flex: 1;
+    height: 1px;
+    background: #dbdbdb;
+}
+
+.facebook {
+    display: block;
+    color: #385185;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.forgot {
+    display: block;
+    color: #00376b;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.signup-card {
+    margin-top: 10px;
+    padding: 22px 10px;
+    font-size: 14px;
+}
+
+.signup-card a {
+    color: #0095f6;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#message {
+    font-size: 12px;
+    margin-top: 12px;
+    color: #737373;
+}
+
+@media (max-width: 400px) {
+    .login-container {
+        width: 100%;
+    }
+
+    .login-card,
+    .signup-card {
+        border-left: none;
+        border-right: none;
+    }
+}
+
